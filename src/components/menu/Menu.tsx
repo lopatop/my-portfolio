@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {InfoContacts} from "../infoContacts/InfoContacts";
 
 export const Menu = () => {
     return (
@@ -21,12 +22,14 @@ export const Menu = () => {
                 <a href="">Contact</a>
             </li>
         </ul>
-
+        <InfoContacts/>
     </StyledMenu>
     );
 };
 
 const StyledMenu = styled.nav`
+    display: flex;
+    gap: 20px;
     ul{
         display: flex;
         gap: 20px;
