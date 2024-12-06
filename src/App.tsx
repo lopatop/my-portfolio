@@ -2,6 +2,7 @@ import './App.css';
 import styled from 'styled-components';
 import {Header} from "./loyaut/header/Header";
 import {Main} from "./loyaut/sections/main/Main";
+import {TechStack} from "./loyaut/sections/techStack/TechStack";
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
         <div className="App">
             <Header/>
             <Main/>
+            <TechStack/>
         </div>
     );
 }
