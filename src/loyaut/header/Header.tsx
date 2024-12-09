@@ -4,13 +4,16 @@ import {Logo} from "../../components/logo/Logo";
 import styled from "styled-components";
 import {InfoContacts} from "../../components/infoContacts/InfoContacts";
 
+export const items = ["Home","About","TechStack","Projects","Contact"];
+
 
 
 export const Header = () => {
     return (
         <StyledHeder>
             <Logo/>
-            <Menu/>
+            <Menu menuItems={items}/>
+            <InfoContacts/>
         </StyledHeder>
     );
 };
