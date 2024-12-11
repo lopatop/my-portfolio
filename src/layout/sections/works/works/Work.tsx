@@ -3,12 +3,10 @@ import styled from "styled-components";
 import {WorkLink} from "./workLink/WorkLink";
 
 type WorkPropsType = {
-    title: string;
-    descriptionText: string;
-    descriptionStack: string;
-    src: string;
-
-
+    title: string
+    descriptionText: string
+    descriptionStack: string
+    src: string
 }
 
 export const Work = (props: WorkPropsType) => {
@@ -24,8 +22,8 @@ export const Work = (props: WorkPropsType) => {
 };
 
 const StyledWork = styled.div`
-background-color: silver;
-    max-width:375px;
+    background-color: silver;
+    max-width: 375px;
     width: 100%;
     
 `

@@ -6,8 +6,8 @@ import {Link} from "./link/Link";
 export const WorkLink = () => {
     return (
         <StyledLink>
-            <Link iconId={'react'} href={'#'} text={'Live Preview'}/>
-            <Link iconId={'html'} href={'#'} text={'View Code'}/>
+            <Link iconId={'link'} viewBox={'0 0 25 25'}  href={'#'} text={'Live Preview'}/>
+            <Link iconId={'github'} href={'#'} text={'View Code'}/>
         </StyledLink>
 
     );
