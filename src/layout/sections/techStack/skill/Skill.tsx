@@ -22,9 +22,12 @@ export const Skill = (props:SkillPropsType) => {
     );
 };
 const StyledSkill = styled.div`
-width: 25%;
+    display: flex;
+    width: 300px;
+    height: 300px;
     justify-content: center;
     align-items: center;
+    
 `
 const SkillTitle = styled.h3`
 
