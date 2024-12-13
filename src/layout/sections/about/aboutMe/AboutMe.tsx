@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {AboutTitle} from "../../../../components/AboutTitle";
+import {theme} from "../../../../styles/Theme";
 
 export const AboutMe = () => {
     return (
@@ -12,9 +13,15 @@ export const AboutMe = () => {
 };
 
 const StyledAboutMe = styled.div`
-
+display: flex;
+    flex-direction: column;
+    gap: 38px
+    
 `
 
 const AboutMeInfo = styled.p`
-
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.44444;
+    color: ${theme.colors.menuFont}
 `
