@@ -15,5 +15,7 @@ export const WorkLink = () => {
 
 const StyledLink = styled.div`
 display: flex;
-justify-content: space-between;    
+    gap: 48px;
+    padding-top: 20px;
+    
 `
