@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.01daf5bc.css",
+    "main.js": "/my-portfolio/static/js/main.e3e0c416.js",
+    "static/js/787.25eaef86.chunk.js": "/my-portfolio/static/js/787.25eaef86.chunk.js",
+    "static/media/photo.webp": "/my-portfolio/static/media/photo.a74629de73a49bc77f00.webp",
+    "static/media/Poppins-Light.ttf": "/my-portfolio/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
+    "static/media/Poppins-Regular.ttf": "/my-portfolio/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Poppins-Medium.ttf": "/my-portfolio/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
+    "static/media/Poppins-SemiBold.ttf": "/my-portfolio/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
+    "static/media/Poppins-Bold.ttf": "/my-portfolio/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
+    "static/media/DMSans_18pt-Regular.ttf": "/my-portfolio/static/media/DMSans_18pt-Regular.beffc7b21fe48a78a6e5.ttf",
+    "static/media/DMSans_18pt-Medium.ttf": "/my-portfolio/static/media/DMSans_18pt-Medium.123c0328cec5a75a9f53.ttf",
+    "static/media/DMSans_18pt-Bold.ttf": "/my-portfolio/static/media/DMSans_18pt-Bold.07e31811e9b1d4e4adfa.ttf",
+    "static/media/icons-sprite.svg": "/my-portfolio/static/media/icons-sprite.f2266777550f08d0ec4ccc6402624f41.svg",
+    "index.html": "/my-portfolio/index.html",
+    "main.01daf5bc.css.map": "/my-portfolio/static/css/main.01daf5bc.css.map",
+    "main.e3e0c416.js.map": "/my-portfolio/static/js/main.e3e0c416.js.map",
+    "787.25eaef86.chunk.js.map": "/my-portfolio/static/js/787.25eaef86.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01daf5bc.css",
+    "static/js/main.e3e0c416.js"
+  ]
+}
