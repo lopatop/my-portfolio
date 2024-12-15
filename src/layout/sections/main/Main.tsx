@@ -4,6 +4,7 @@ import photo from "../../../assets/images/photo.webp"
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme";
+import decorationSvg from "../../../assets/images/icons.svg";
 
 
 
@@ -21,6 +22,9 @@ export const Main = () => {
                     </MyGreet>
                     <PhotoWrapper>
                         <Photo src={photo} alt='my-photo'/>
+                        <div>
+                            <img src={decorationSvg} alt=""/>
+                        </div>
                     </PhotoWrapper>
 
                 </FlexWrapper>
