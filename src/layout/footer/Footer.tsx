@@ -16,7 +16,7 @@ export const Footer = () => {
         <StyledFooter>
             <Container>
                 <StyledIconContacts>
-                    <Logo/>
+                    <Logo logo={"logoFooter"}/>
                     <div>
                         <FooterInfo menuItems={itemsContact}/>
                         <InfoContacts/>
@@ -24,7 +24,7 @@ export const Footer = () => {
                 </StyledIconContacts>
                 <FlexWrapper justify={"space-between"}>
                     <Menu menuItems={itemsFooter}/>
-                    <DecorationText> Designed and built by Lopatop with Love & Coffee</DecorationText>
+                    <DecorationText> <span>Designed and built by</span> lopatop <span>with</span> Love <span>&</span>Coffee</DecorationText>
                 </FlexWrapper>
             </Container>
         </StyledFooter>
@@ -48,6 +48,8 @@ const StyledIconContacts = styled.div`
     justify-content: space-between;
     align-items: center;
     padding-bottom: 93px;
+    
+    
     div{
         display: flex;
         width: 50%;
@@ -73,13 +75,13 @@ const DecorationText = styled.p`
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    span{
+        background: none;
+        -webkit-text-fill-color: ${theme.colors.menuFont} ;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.44444;
+    }
 `
 
-const SmallText = styled.span`
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.44444;
-    text-align: center;
-    color: ${theme.colors.menuFont} !important;
-`
