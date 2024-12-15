@@ -22,4 +22,12 @@ const StyledInfoContacts = styled.ul`
     display: flex;
     gap: 20px;
     
+    li{
+        transition: transform 0.3s ease;
+        &:hover{
+            transform: translateY(-4px);
+        }
+    }
+   
+    
 `

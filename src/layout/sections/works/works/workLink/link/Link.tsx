@@ -30,5 +30,11 @@ const Links = styled.a`
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: ${theme.colors.titleFont};
+
+    transition: transform 0.3s ease;
+    :hover{
+        transform: translateY(-4px);
+        
+    }
     
 `
