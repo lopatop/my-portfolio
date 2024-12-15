@@ -3,7 +3,10 @@ import styled from "styled-components";
 import {SectionInfo} from "../../../components/SectionInfo";
 import {Work} from "./works/Work";
 import {FlexWrapper} from "../../../components/FlexWrapper";
-import socialImg from "../../../assets/images/photo.webp";
+
+import Img1 from "../../../assets/images/image1.webp";
+import Img2 from "../../../assets/images/image2.webp";
+import Img3 from "../../../assets/images/image3.webp";
 import {Container} from "../../../components/Container";
 
 
@@ -15,15 +18,15 @@ export const Works = () => {
                          description={"Things I’ve built so far"}
                          padding={"50px 0 115px"}/>
             <FlexWrapper justify={"space-around"} wrap={"wrap"}>
-                    <Work src={socialImg}
+                    <Work src={Img1}
                           title={'Project Tile goes here'}
                           descriptionText={'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content'}
                           descriptionStack={'HTML , JavaScript, SASS, React'}/>
-                    <Work src={socialImg}
+                    <Work src={Img2}
                           title={'Project Tile goes here'}
                           descriptionText={'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content'}
                           descriptionStack={'HTML , JavaScript, SASS, React'}/>
-                    <Work src={socialImg}
+                    <Work src={Img3}
                           title={'Project Tile goes here'}
                           descriptionText={'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content'}
                           descriptionStack={'HTML , JavaScript, SASS, React'}/>
@@ -36,6 +39,5 @@ export const Works = () => {
 
 const StyledWorks = styled.section`
     padding-top: 200px;
-    min-height: 100vh;
 
 `

@@ -60,10 +60,11 @@ const Text = styled.p`
     font-size: 18px;
     line-height: 1.44444;
     color: ${theme.colors.textFont};
-    padding-top: 26px;
+    padding-top: 17px;
     
 `
 const Paragraph = styled.p`
+    padding-top: 12px;
 
 `
 
