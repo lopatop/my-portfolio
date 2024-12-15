@@ -127,7 +127,7 @@ module.exports = function (webpackEnv) {
         loader: require.resolve('postcss-loader'),
         options: {
           postcssOptions: {
-            // Necessary for external CSS imports to work
+            // Necessary for external CSS imports to works
             // https://github.com/facebook/create-react-app/issues/2677
             ident: 'postcss',
             config: false,
@@ -617,7 +617,7 @@ module.exports = function (webpackEnv) {
         new ReactRefreshWebpackPlugin({
           overlay: false,
         }),
-      // Watcher doesn't work well if you mistype casing in a path so we use
+      // Watcher doesn't works well if you mistype casing in a path so we use
       // a plugin that prints an error when you attempt to do this.
       // See https://github.com/facebook/create-react-app/issues/240
       isEnvDevelopment && new CaseSensitivePathsPlugin(),
