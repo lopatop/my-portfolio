@@ -7,7 +7,7 @@ import {Container} from "../../../components/Container";
 
 export const Contact = () => {
     return (
-        <StyleContact>
+        <StyleContact id="contact">
             <Container>
             <FlexWrapper direction={"column"} align={"center"} gap={"10px"}>
                 <QuestionsMail>For any questions please mail me:</QuestionsMail>

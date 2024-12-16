@@ -11,13 +11,13 @@ import decorationSvg from "../../../assets/images/icons.svg";
 
 export const Main = () => {
     return (
-        <StyledMain>
+        <StyledMain id="home">
             <Container>
                 <FlexWrapper align={'center'} justify={'space-between'}>
                     <MyGreet>
                         <Greetings>Hi 👋,</Greetings>
                         <MyNameIs>My name is</MyNameIs>
-                        <MyName>Pavel Lapata</MyName>
+                        <MyName>Pavel</MyName>
                         <MyTitle>A Frontend Developer</MyTitle>
                     </MyGreet>
                     <PhotoWrapper>

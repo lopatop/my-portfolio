@@ -8,14 +8,14 @@ import {Container} from "../../../components/Container";
 
 export const About = () => {
     return (
-        <StyleAbout>
+        <StyleAbout id="about">
             <Container>
                 <AboutWrapper>
-            <FlexWrapper direction={"column"} justify={'flex-start'} gap={"38px"}>
-                    <AboutMe/>
-                    <MyWorks/>
-                    <Education/>
-            </FlexWrapper>
+                    <FlexWrapper direction={"column"} justify={'flex-start'} gap={"38px"}>
+                        <AboutMe/>
+                        <MyWorks/>
+                        <Education/>
+                    </FlexWrapper>
                 </AboutWrapper>
             </Container>
         </StyleAbout>
@@ -26,8 +26,6 @@ const StyleAbout = styled.section`
 
 `
 const AboutWrapper = styled.div`
-    border: 1px solid blue;
-    min-height: 50vh;
     max-width: 710px;
 `
 

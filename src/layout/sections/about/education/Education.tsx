@@ -6,22 +6,28 @@ import {Experience} from "../experience";
 export const Education = () => {
     return (
         <StyledEducation>
-            <AboutTitle>Work Experience</AboutTitle>
+            <AboutTitle>Education</AboutTitle>
             <Experience name={"Bachelor in Electronic"}
-                        time={"Full Time"}
+                        time={"Aug 2015 - Dec 2020"}
                         place={"Bangalore Instutute"}
                         company={"Bengaluru"}
-                        deadline={"Aug 2015 - Dec 2020"}/>
+                        deadline={"Full Time"}/>
             <Experience name={"Bachelor in Electronic"}
-                        time={"Full Time"}
+                        time={"Aug 2015 - Dec 2020"}
                         place={"Bangalore Instutute"}
                         company={"Bengaluru"}
-                        deadline={"Aug 2015 - Dec 2020"}/>
+                        deadline={"Full Time"}/>
+            <Experience name={"Bachelor in Electronic"}
+                        time={"Aug 2015 - Dec 2020"}
+                        place={"Bangalore Instutute"}
+                        company={"Bengaluru"}
+                        deadline={"Full Time"}/>
         </StyledEducation>
     );
 };
 
 const StyledEducation = styled.div`
-
-
+display: flex;
+flex-direction: column;
+    gap: 30px;
 `
