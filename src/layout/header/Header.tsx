@@ -6,7 +6,7 @@ import {InfoContacts} from "../../components/infoContacts/InfoContacts";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 
-export const items = ["Home","About","TechStack","Projects","Contact"];
+export const items = ["Home","About","Technologies","Projects","Contact"];
 
 
 
