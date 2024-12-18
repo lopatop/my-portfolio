@@ -7,7 +7,7 @@ import {Container} from "../../../components/Container";
 
 export const TechStack = () => {
     return (
-        <StyledTechStack>
+        <StyledTechStack id="technologies">
             <Container>
             <SectionInfo title={"My Tech Stack"}
                          description={"Technologies I’ve been working with recently"}
