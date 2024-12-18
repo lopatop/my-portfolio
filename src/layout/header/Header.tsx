@@ -5,6 +5,8 @@ import styled from "styled-components";
 import {InfoContacts} from "../../components/infoContacts/InfoContacts";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
+import {theme} from "../../styles/Theme";
+import {MobileMenu} from "./mobileMenu/MobileMenu";
 
 export const items = ["Home","About","Technologies","Projects","Contact"];
 
@@ -17,6 +19,7 @@ export const Header = () => {
                 <FlexWrapper justify={'space-between'} align={'center'}>
                     <Logo/>
                     <InfoWrapper>
+                        <MobileMenu menuItems={items}/>
                         <Menu menuItems={items}/>
                         <InfoContacts/>
                     </InfoWrapper>
@@ -30,7 +33,7 @@ export const Header = () => {
 const StyledHeader = styled.header`
     background-color: transparent;
     padding-top: 40px;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -45,4 +48,9 @@ const InfoWrapper = styled.div`
     font-size: 20px;
     line-height: 1.3;
     text-align: center;
+    
+    @media ${theme.media.desktop} {
+        display: none   ;
+    }
+    
 `
