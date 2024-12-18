@@ -9,7 +9,6 @@ export const GlobalStyled = createGlobalStyle`
         padding: 0;
         border: 0;
         box-sizing: border-box;
-        background-color: ${theme.colors.primaryBg};
         
     }
     ol, ul {
@@ -40,6 +39,8 @@ export const GlobalStyled = createGlobalStyle`
         sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        background-color: ${theme.colors.primaryBg};
+        line-height: 1.2;
     }
     
 `
