@@ -21,7 +21,7 @@
     font-style: normal;
 }
 
-/* Подключение шрифтов Poppins */
+
 @font-face {
     font-family: 'Poppins';
     src: url('./assets/fonts/Poppins-Light.ttf') format('truetype');
