@@ -11,7 +11,7 @@ export const Contact = () => {
             <Container>
             <FlexWrapper direction={"column"} align={"center"} gap={"10px"}>
                 <QuestionsMail>For any questions please mail me:</QuestionsMail>
-                <MyMail href={"#"}>pavellopato327@gmail.com</MyMail>
+                <MyMail href={"mailto:pavellopato327@gmail.com"}>pavellopato327@gmail.com</MyMail>
             </FlexWrapper>
             </Container>
         </StyleContact>
