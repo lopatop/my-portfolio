@@ -18,8 +18,8 @@ export const Header = () => {
             <Container>
                 <FlexWrapper justify={'space-between'} align={'center'}>
                     <Logo/>
+                    <MobileMenu menuItems={items}/>
                     <InfoWrapper>
-                        <MobileMenu menuItems={items}/>
                         <Menu menuItems={items}/>
                         <InfoContacts/>
                     </InfoWrapper>
@@ -48,9 +48,9 @@ const InfoWrapper = styled.div`
     font-size: 20px;
     line-height: 1.3;
     text-align: center;
-    
     @media ${theme.media.desktop} {
-        display: none   ;
+        display: none ;
     }
+ 
     
 `
