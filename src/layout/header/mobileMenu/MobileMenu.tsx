@@ -11,18 +11,18 @@ type MenuPropsType = {
 export const MobileMenu = (props: MenuPropsType) => {
     return (
         <StyledMobileMenu>
-            <BurgerButton isOpen={true}>
+            <BurgerButton isOpen={false}>
                 <span></span>
             </BurgerButton>
 
-            <MobileMenuPopup isOpen={true}>
+            <MobileMenuPopup isOpen={false}>
                     <MenuWrapper>
                     <ul>
                         {props.menuItems.map((items, index,) => {
                                 return (
-                                    <ListItem key={index}>
-                                        <LinkItem href={`#${items.toLowerCase()}`}>{items}</LinkItem>
-                                    </ListItem>
+                                    <ListItemMobile key={index}>
+                                        <LinkItemMobile href={`#${items.toLowerCase()}`}>{items}</LinkItemMobile>
+                                    </ListItemMobile>
                                 )
                             }
                         )}
@@ -37,8 +37,13 @@ export const MobileMenu = (props: MenuPropsType) => {
 };
 
 const StyledMobileMenu = styled.nav`
+    
+    
+    
+ display: none;
+
     @media ${theme.media.desktop}{
-        display: none;
+        display: block;
     }
     
 
@@ -59,9 +64,17 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
         gap: 20px;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 500;
+        font-size: 3em;
+        line-height: 1.3;
+        
 
     `}
+
+  
 
 `
 
@@ -86,18 +99,19 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
     right: -100px;
     width: 200px;
     height: 200px;
+    z-index: 999999999;
 
     span {
         display: block;
         width: 36px;
         height: 2px;
-        color: ${theme.colors.menuFont};
+        background-color: ${theme.colors.menuFont};
         position: absolute;
         left: 40px;
         bottom: 50px;
 
         ${props => props.isOpen && css <{ isOpen: boolean }>`
-            color: rgba(255,255,255,0);
+            background-color: rgba(255,255,255,0);
     `}
         
         
@@ -106,7 +120,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
             display: block;
             width: 36px;
             height: 2px;
-            color: ${theme.colors.menuFont};
+            background-color: ${theme.colors.menuFont};
             position: absolute;
             transform: translateY(-10px);
             
@@ -120,7 +134,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
             display: block;
             width: 36px;
             height: 2px;
-            color: ${theme.colors.menuFont};
+            background-color: ${theme.colors.menuFont};
             position: absolute;
             transform: translateY(10px);
             
@@ -131,7 +145,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
     }
 `
 
-const ListItem = styled.li`
+const ListItemMobile = styled.li`
     transition: transform 0.3s ease;
     :hover{
         transform: translateY(-4px);
@@ -139,7 +153,7 @@ const ListItem = styled.li`
 
 `
 
-const LinkItem = styled.a`
+const LinkItemMobile = styled.a`
     color: ${theme.colors.menuFont};
 
  
