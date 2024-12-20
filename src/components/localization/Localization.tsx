@@ -40,7 +40,8 @@ const StyleLocalization = styled.div`
     font-size: 12px;
     line-height: 2.33333;
     letter-spacing: 0.08em;
-    color: ${theme.colors.menuFont}
+    color: ${theme.colors.menuFont};
+    margin: 10px 0 24px;
     
 
 `
@@ -49,17 +50,23 @@ const WrapperLocalization = styled.div`
     justify-content: space-between;
     width: 100%;
     max-width: 50%;
+    align-items: center;
+    height: 17px;
 `
 
-const DataCompany = styled.p`
+const DataCompany = styled.span`
     
 
 `
 
-const DataPlace = styled.p`
+const DataPlace = styled.span`
 
 `
 
-const DataTime = styled.p`
+const DataTime = styled.span`
+    display: flex;
+    align-items: center;
+    height: 17px;
+    
 
 `
