@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from "styled-components";
-import {theme} from "../../styles/Theme";
-import {FlexWrapper} from "../FlexWrapper";
+import {FlexWrapper} from "./FlexWrapper";
+import {theme} from "../styles/Theme";
+import {font} from "../styles/Common";
+
 
 type PropsPosition = {
     name: string;
@@ -21,13 +23,13 @@ export const PositionDeadlines = (props:PropsPosition) => {
 };
 
 const StyledPositionDeadlines = styled.div`
+    height: 30px;
 
 
 `
 
 const Position = styled.span`
-    font-weight: 400;
-    font-size: 20px;
+    ${font({ weight: 400, Fmin: 18, Fmax: 20 })};
     line-height: 1.4;
     letter-spacing: 0.05em;
     color: ${theme.colors.textFont};
@@ -43,5 +45,5 @@ const Deadlines = styled.div`
     width: 84px;
     height: 24px;
     background: #d7ffe0;
-
+    
 `

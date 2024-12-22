@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {Icon} from "../../../../../../components/icon/Icon";
 import {theme} from "../../../../../../styles/Theme";
+import {font} from "../../../../../../styles/Common";
 
 type LinkPropsType = {
     iconId: string;
@@ -25,8 +26,7 @@ display: flex;
     gap: 3px
 `
 const Links = styled.a`
-    font-weight: 400;
-    font-size: 16px;
+    ${font({weight:400,Fmax:16, Fmin:14})}
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: ${theme.colors.titleFont};
