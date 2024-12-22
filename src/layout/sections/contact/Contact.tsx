@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {theme} from "../../../styles/Theme";
 import {Container} from "../../../components/Container";
+import {font} from "../../../styles/Common";
 
 
 export const Contact = () => {
@@ -19,22 +20,24 @@ export const Contact = () => {
 };
 
 const StyleContact = styled.section`
-  padding-top: 180px;
+  padding-top: 110px;
+
+    @media ${theme.media.mobile} {
+        padding-top: 60px;
+    }
 
 `
 const QuestionsMail = styled.span`
-    font-family: "DM Sans", sans-serif;
-    font-weight: 700;
-    font-size: 58px;
+    ${font({family:'"DM Sans",sans-serif', weight:700, Fmax:58, Fmin:20})}
+ 
     letter-spacing: -0.02em;
     text-align: center;
     color: ${theme.colors.textFont}
 `
 
 const MyMail = styled.a`
-    font-family: "DM Sans", sans-serif;
-    font-weight: 700;
-    font-size: 58px;
+    ${font({family:'"DM Sans",sans-serif', weight:700, Fmax:58, Fmin:20})}
+
     line-height: 1.2069;
     letter-spacing: -0.02em;
     text-align: center;
