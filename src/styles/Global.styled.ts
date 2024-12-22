@@ -23,6 +23,15 @@ export const GlobalStyled = createGlobalStyle`
         background-color: unset;
         border: none;
     }
+    
+    section{
+        padding: 80px 0;
+        @media  ${theme.media.mobile} {
+            padding: 80px 0;
+        }
+            
+        }
+    
 
     input,
     textarea,
@@ -41,6 +50,7 @@ export const GlobalStyled = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
         background-color: ${theme.colors.primaryBg};
         line-height: 1.2;
+        min-width: 360px;
     }
     
 `
