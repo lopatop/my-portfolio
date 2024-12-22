@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {AboutTitle} from "../../../../components/AboutTitle";
 import {theme} from "../../../../styles/Theme";
+import {font} from "../../../../styles/Common";
 
 export const AboutMe = () => {
     return (
@@ -13,15 +14,18 @@ export const AboutMe = () => {
 };
 
 const StyledAboutMe = styled.div`
-display: flex;
+    display: flex;
     flex-direction: column;
-    gap: 38px
+    gap: 38px;
+    
+    @media ${theme.media.mobile} {
+    gap: 30px;
+}
     
 `
 
 const AboutMeInfo = styled.p`
-    font-weight: 400;
-    font-size: 18px;
+    ${font({ weight: 400, Fmin: 16, Fmax: 18 })};
     line-height: 1.44444;
     color: ${theme.colors.menuFont}
 `
