@@ -6,10 +6,9 @@ import {InfoContacts} from "../../components/infoContacts/InfoContacts";
 import {Container} from "../../components/Container";
 import {theme} from "../../styles/Theme";
 import {FlexWrapper} from "../../components/FlexWrapper";
-import {FooterInfo} from "./footerInfo/FooterInfo";
+import {font} from "../../styles/Common";
 
 const itemsFooter = ["Home", "About", "Technologies", "Projects", "Contact"];
-const itemsContact =["+91 12345 09876","info@example.com"]
 
 export const Footer = () => {
     return (
@@ -17,12 +16,9 @@ export const Footer = () => {
             <Container>
                 <StyledIconContacts>
                     <Logo logo={"logoFooter"}/>
-                    <div>
-                        <FooterInfo menuItems={itemsContact}/>
                         <InfoContacts/>
-                    </div>
                 </StyledIconContacts>
-                <FlexWrapper justify={"space-between"}>
+                <FlexWrapper justify={"space-between"} wrap="wrap" gap="55px" align="center">
                     <Menu menuItems={itemsFooter}/>
                     <DecorationText> <span>Designed and built by</span> lopatop <span>with</span> Love <span>&</span>Coffee</DecorationText>
                 </FlexWrapper>
@@ -32,42 +28,52 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-    padding: 200px 0 60px;
+    padding: 140px 0 60px;
     display: flex;
     justify-content: space-between;
-    
-    font-family: "DM Sans", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
+    ${font({weight:400, Fmax:18, Fmin:10})}
     line-height: 1.44444;
- 
+    
+    ${FlexWrapper} {
+        align-items: center;
+    }
+    
+    @media ${theme.media.mobile} {
+        padding: 0 0 30px;
+        ${FlexWrapper} {
+            flex-direction: column;
+            justify-content: center;
+            gap:30px;
+        }
+    }
 
 `
 const StyledIconContacts = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 93px;
+    padding-bottom: 75px;
     
     
-    div{
-        display: flex;
-        width: 50%;
-        justify-content: space-between;
-    }
     position: relative;
 
     ::before {
         content: "";
         display: block;
-        width: 1200px;
+        width: calc(100% - 10px);
         height: 2px;
         background: #42446e;
         position: absolute;
         top: 93px;
         left: 10px;
+        
     }
-
+    @media ${theme.media.mobile} {
+        padding-bottom: 40px;
+        ::before{
+            top:70px;
+        }
+    }
 
 `
 const DecorationText = styled.p`
@@ -78,10 +84,6 @@ const DecorationText = styled.p`
     span{
         background: none;
         -webkit-text-fill-color: ${theme.colors.menuFont} ;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 1.44444;
     }
 `
 
