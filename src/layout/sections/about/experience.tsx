@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from "styled-components";
-import {PositionDeadlines} from "../../../components/positionDeadlines/PositionDeadlines";
 import {Localization} from "../../../components/localization/Localization";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import {PositionDeadlines} from "../../../components/PositionDeadlines";
+import {theme} from "../../../styles/Theme";
 
 
 type PropsInfoWorkOrEducation = {
@@ -33,12 +34,15 @@ const  StyledExperience = styled.div`
     
     ::before {
         content: "";
-        display: block;
-        width: 696px;
+        width: 100%;
+        max-width: 696px;
         height: 1px;
         background: #ebeaed;
         position: absolute;
         bottom: 0;
         left: 2px;
+        @media  ${theme.media.tablet} {
+            bottom: -20px;
+        }
     }
 `
