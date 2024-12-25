@@ -1,31 +1,24 @@
 import React from 'react';
-import styled from "styled-components";
 import {MyWorks} from "./myWork/MyWorks";
 import {Education} from "./education/Education";
 import {AboutMe} from "./aboutMe/AboutMe";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
+import {S} from './About_Styles';
 
-export const About = () => {
+export const About: React.FC = () => {
     return (
-        <StyleAbout id="about">
+        <S.About id="about">
             <Container>
-                <AboutWrapper>
+                <S.AboutWrapper>
                     <FlexWrapper direction={"column"} justify={'flex-start'} gap={"38px"}>
                         <AboutMe/>
                         <MyWorks/>
                         <Education/>
                     </FlexWrapper>
-                </AboutWrapper>
+                </S.AboutWrapper>
             </Container>
-        </StyleAbout>
+        </S.About>
     );
 };
-
-const StyleAbout = styled.section`
-
-`
-const AboutWrapper = styled.div`
-    max-width: 710px;
-`
 
