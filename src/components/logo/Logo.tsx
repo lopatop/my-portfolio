@@ -1,13 +1,17 @@
 import React from 'react';
 import {Icon} from "../icon/Icon";
+import {animateScroll as scroll} from "react-scroll";
+
+type LogoPropsType ={
+    logo?:string
+}
 
 
 
-export const Logo = () => {
+export const Logo = (props:LogoPropsType) => {
     return (
-        <a href=''>
-            <Icon iconId ={'github'} height={'25'} width={'25'}/>
+        <a onClick ={() =>{scroll.scrollToTop()}}>
+            <Icon iconId ={props.logo ||'logo'} height={'60'} width={'150'} viewBox={'35 -17 50 50'}/>
         </a>
     );
 };
-
