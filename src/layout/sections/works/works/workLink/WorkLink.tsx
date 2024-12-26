@@ -1,21 +1,13 @@
 import React from 'react';
-
-import styled from "styled-components";
 import {Link} from "./link/Link";
+import { S } from '../../Works_Styles';
 
-export const WorkLink = () => {
+export const WorkLink: React.FC = () => {
     return (
-        <StyledLink>
-            <Link iconId={'link'} viewBox={'0 0 25 25'}  href={'#'} text={'Live Preview'}/>
+        <S.WorkLink>
+            <Link iconId={'link'} viewBox={'0 0 25 25'} href={'#'} text={'Live Preview'}/>
             <Link iconId={'github'} href={'#'} text={'View Code'}/>
-        </StyledLink>
-
+        </S.WorkLink>
     );
 };
 
-const StyledLink = styled.div`
-display: flex;
-    gap: 48px;
-    padding-top: 20px;
-    
-`
