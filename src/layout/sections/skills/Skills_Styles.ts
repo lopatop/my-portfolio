@@ -3,6 +3,7 @@ import {theme} from "../../../styles/Theme";
 
 
 const Skills = styled.section`
+    position: relative;
     padding-top: 145px;
     
     @media ${theme.media.mobile} {
