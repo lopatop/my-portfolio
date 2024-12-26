@@ -36,6 +36,7 @@ const MyName = styled.h2`
 `
 const MyGreet = styled.div`
     color: ${theme.colors.titleFont};
+    padding-bottom: 20px;
     
 `
 const Greetings = styled.span`
