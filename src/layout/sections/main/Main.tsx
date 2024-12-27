@@ -4,7 +4,6 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import decorationSvg from "../../../assets/images/icons.svg";
 import { S } from './Main_Styles';
-import Tilt from 'react-parallax-tilt';
 
 
 export const Main: React.FC = () => {
@@ -20,9 +19,7 @@ export const Main: React.FC = () => {
                     </S.MyGreet>
                     <S.PhotoWrapper>
                         <S.Photo src={photo} alt='my-photo'/>
-                        <Tilt>
                             <S.DecorationSvg src={decorationSvg} alt=""/>
-                        </Tilt>
                     </S.PhotoWrapper>
                 </FlexWrapper>
             </Container>

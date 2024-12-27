@@ -1,25 +1,15 @@
 import {theme} from "../../../styles/Theme";
 import styled from "styled-components";
 import {font} from "../../../styles/Common";
-import {FlexWrapper} from "../../../components/FlexWrapper";
 
 
 
-const Main = styled.div`
+const Main = styled.section`
     padding-top: 75px;
     min-height: 100vh;
     display: flex;
     align-items: center;
     ${font({ weight: 700, Fmin: 36, Fmax: 58 })};
-    
-    
-    //!!!!!!!!!!!! @media${theme.media.desktop}{
-    //     ${FlexWrapper}{
-    //         flex-direction: column;
-    //     }
-    //    
-    // }
-    
 `
 
 const MyTitle = styled.h1`

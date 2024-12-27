@@ -13,13 +13,6 @@ const Contact = styled.section`
     }
 
 `
-const QuestionsMail = styled.span`
-    ${font({family: '"DM Sans",sans-serif', weight: 700, Fmax: 58, Fmin: 20})}
-
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: ${theme.colors.textFont}
-`
 const MyMail = styled.a`
     ${font({weight: 400, Fmax: 32, Fmin: 20})};
     text-align: center;
@@ -31,11 +24,65 @@ const MyMail = styled.a`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 `
+const Form = styled.form`
+    position: relative;
+max-width: 540px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:16px;
+    margin: 0 auto;
+    textarea{
+        resize: none;
+        height: 155px;
+    }
+`
+const Field = styled.input`
+width: 100%;
+    background-color: ${theme.colors.fieldBg};
+    border: 1px solid ${theme.colors.borderBlock};
+    border-radius: 5px;
+    padding: 7px 15px;
+    ${font({weight: 400, Fmax: 12, Fmin: 12})};
+    color: ${theme.colors.textFont};
+    &:hover, :focus-visible {
+        border: 1px solid ${theme.colors.fieldBorder};
+    }
+    
+    &::placeholder {
+        color: ${theme.colors.placeholder};
+        text-transform: capitalize;
+    }
+`
 
+const ButtonForm = styled.button`
+    ${font({weight: 400, Fmax: 12, Fmin: 12})};
+    border-radius: 5px;
+    padding: 7px 15px;
+    max-width: 540px;
+    width: 100%;
+    border: 1px solid rgba(220, 86, 236, 0.82);
+    color: black;
+    cursor: pointer;
+    background: linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%);
+
+    &:hover {
+        border: 1px solid rgba(220, 86, 236, 0.82);
+        transition: transform 0.3s ease;
+        transform: translateY(-4px);
+        background: linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+`
 
 
 export const S = {
     Contact,
-    QuestionsMail,
     MyMail,
+    Form,
+    Field,
+    ButtonForm,
 }
