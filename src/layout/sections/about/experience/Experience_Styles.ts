@@ -43,16 +43,20 @@ const Position = styled.span`
 `
 
 const Deadlines = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 600;
     font-size: 9px;
     line-height: 2.88889;
     text-align: center;
-    color: #018c0f;
     border-radius: 100px;
     width: 84px;
     height: 24px;
-    background: #d7ffe0;
-
+    border: 1px solid rgba(220, 86, 236, 0.82);
+    background: linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 `
 
 
