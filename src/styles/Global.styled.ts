@@ -10,6 +10,7 @@ export const GlobalStyled = createGlobalStyle`
         border: 0;
         box-sizing: border-box;
         
+        
     }
     ol, ul {
         list-style: none;
@@ -17,15 +18,24 @@ export const GlobalStyled = createGlobalStyle`
 
     a {
         text-decoration: none;
+        cursor: pointer;
+        &:focus-visible{
+            outline: 1px solid ${theme.colors.borderBlock};
+        }           
     }
 
     button {
-        background-color: unset;
         border: none;
+        background: none;
+        &:focus-visible{
+            outline: 1px solid ${theme.colors.borderBlock};
+        }   
     }
     
     section{
+        background-color: ${theme.colors.primaryBg};
         padding: 80px 0;
+        
         @media  ${theme.media.mobile} {
             padding: 80px 0;
         }
@@ -36,9 +46,10 @@ export const GlobalStyled = createGlobalStyle`
     input,
     textarea,
     select {
-        background: none;
-        border: none;
-        outline: none;
+        &:focus-visible{
+            outline: 1px solid ${theme.colors.borderBlock};
+        }
+        
     }
     
     body {
@@ -51,6 +62,7 @@ export const GlobalStyled = createGlobalStyle`
         background-color: ${theme.colors.primaryBg};
         line-height: 1.2;
         min-width: 360px;
+        
     }
     
 `
