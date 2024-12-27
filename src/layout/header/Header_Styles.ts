@@ -19,6 +19,9 @@ const Header = styled.header`
     &.backGround {
         background-color: rgba(31, 31, 32, 0.9);
     }
+    @media ${theme.media.desktop} {
+        padding-top: 0;
+    }
 `
 const InfoWrapper = styled.div`
     display: flex;

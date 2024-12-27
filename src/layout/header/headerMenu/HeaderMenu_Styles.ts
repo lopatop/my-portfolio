@@ -1,6 +1,7 @@
 import {font} from "../../../styles/Common";
 import styled, {css} from "styled-components";
 import {theme} from "../../../styles/Theme";
+import {Link} from "react-scroll";
 
 
 //menu
@@ -10,13 +11,24 @@ const MenuItem = styled.li`
     :hover {
         transform: translateY(-4px);
     }
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
 
     ${font({family: '"DM Sans", sans-serif', weight: 500, Fmax: 20, Fmin: 14})}
 `
 
-const LinkItem = styled.a`
+const LinkItem = styled(Link)`
     color: ${theme.colors.menuFont};
+    cursor:pointer;
+    transition: transform 0.3s ease;
 
+    :hover {
+        transition: transform 0.3s ease;
+        transform: translateY(-4px);
+        background: linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 `
 
 
@@ -34,21 +46,22 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
     bottom: 0;
     z-index: 99999;
     background-color: rgba(31, 31, 32, 0.9);
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translateY(-100%);
+    transition: transform 0.8s ease;
 
     ${props => props.isOpen && css <{ isOpen: boolean }>`
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        transform: translateY(0);
+        ${MenuItem}{
+            font-size: 50px;
+        }
+        
         gap: 20px;
-        font-family: "DM Sans", sans-serif;
-        font-weight: 500;
-        font-size: 3em;
-        line-height: 1.3;
-
-
+       
     `}
 
 
@@ -73,11 +86,12 @@ const MenuWrapper = styled.div`
 
 const BurgerButton = styled.button<{ isOpen: boolean }>`
     position: fixed;
-    top: -80px;
+    top: -116px;
     right: -100px;
     width: 200px;
     height: 200px;
     z-index: 999999999;
+   
 
     span {
         display: block;
