@@ -18,7 +18,7 @@ const MyMail = styled.a`
     text-align: center;
     line-height: 1.2069;
     letter-spacing: -0.02em;
-    
+
     background: linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -26,30 +26,32 @@ const MyMail = styled.a`
 `
 const Form = styled.form`
     position: relative;
-max-width: 540px;
+    max-width: 540px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:16px;
+    gap: 16px;
     margin: 0 auto;
-    textarea{
+
+    textarea {
         resize: none;
         height: 155px;
     }
 `
 const Field = styled.input`
-width: 100%;
+    width: 100%;
     background-color: ${theme.colors.fieldBg};
     border: 1px solid ${theme.colors.borderBlock};
     border-radius: 5px;
     padding: 7px 15px;
     ${font({weight: 400, Fmax: 12, Fmin: 12})};
     color: ${theme.colors.textFont};
+
     &:hover, :focus-visible {
         border: 1px solid ${theme.colors.fieldBorder};
     }
-    
+
     &::placeholder {
         color: ${theme.colors.placeholder};
         text-transform: capitalize;
