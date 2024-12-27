@@ -16,16 +16,16 @@ export const Localization: React.FC<PropsLocalization> = (props: PropsLocalizati
         <S.Localization>
             <S.WrapperLocalization>
                 <FlexWrapper align="center" gap="8px">
-                    <Icon iconId={"office"} width={"12px"} height={"12px"} viewBox={"0 0 12px 12px"}/>
+                    <Icon iconId={"office"} width={"12"} height={"12"} viewBox={"0 0 12 12"}/>
                     <S.DataCompany>{props.company}</S.DataCompany>
                 </FlexWrapper>
                 <FlexWrapper align="center" gap="8px">
-                    <Icon iconId={"location"} width={"12px"} height={"12px"} viewBox={"0 0 12px 12px"}/>
+                    <Icon iconId={"location"} width={"12"} height={"12"} viewBox={"0 0 12 12"}/>
                     <S.DataPlace>{props.place}</S.DataPlace>
                 </FlexWrapper>
             </S.WrapperLocalization>
             <FlexWrapper align="center" gap="8px">
-                <Icon iconId={"time"} width={"14px"} height={"12px"} viewBox={"4 4 16px 16px"}/>
+                <Icon iconId={"time"} width={"14"} height={"12"} viewBox={"0 0 16 16"}/>
                 <S.DataTime>{props.time}</S.DataTime>
             </FlexWrapper>
         </S.Localization>

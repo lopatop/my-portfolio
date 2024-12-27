@@ -2,19 +2,26 @@ import React from 'react';
 import {Icon} from "../icon/Icon";
 import styled from "styled-components";
 
-export const InfoContacts = () => {
+type InfoContactsProps = {
+    width?: string
+    height?: string
+    viewBox?: string
+}
+
+
+export const InfoContacts:React.FC<InfoContactsProps> = (props: InfoContactsProps) => {
     return (
         <StyledInfoContacts>
             <li>
                 <a href="https://www.instagram.com/lopatop/" target="_blank">
-                    <Icon iconId={'instagram'} width={'30'} height={'30'} viewBox={'0 0 45 45'}/>
+                    <Icon iconId={'instagram'} width={props.width} height={props.height} viewBox={'0 0 45 45'}/>
                 </a>
             </li>
             <li>
-                <a href="https://t.me/lopatop" target="_blank"><Icon iconId={'telegram'} width={'30'} height={'30'} viewBox={'0 0 32 32'}/></a>
+                <a href="https://t.me/lopatop" target="_blank"><Icon iconId={'telegram'} width={props.width} height={props.height} viewBox={'0 0 32 32'}/></a>
             </li>
             <li>
-                <a href="https://github.com/lopatop" target="_blank"><Icon iconId={'githubMenu'} width={'30'} height={'30'} viewBox={'0 0 95 95'}/></a>
+                <a href="https://github.com/lopatop" target="_blank"><Icon iconId={'githubMenu'} width={props.width} height={props.height} viewBox={'0 0 95 95'}/></a>
             </li>
         </StyledInfoContacts>
     );

@@ -1,4 +1,4 @@
-/* Подключение шрифтов DMSans */
+
 @font-face {
     font-family: 'DMSans';
     src: url("./assets/fonts/DMSans_18pt-Regular.ttf") format('truetype');

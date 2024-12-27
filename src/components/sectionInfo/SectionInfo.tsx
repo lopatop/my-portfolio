@@ -3,7 +3,7 @@ import {S} from './SectionInfo_Styles';
 
 type SectionInfoProps = {
     title: string
-    description?: string
+    description?: React.ReactNode
     padding?: string
 
 }

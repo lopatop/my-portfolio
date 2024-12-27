@@ -10,11 +10,13 @@ const About = styled.section`
 `
 const AboutWrapper = styled.div`
     max-width: 710px;
+    
 `
 
 //AboutMe
 
 const AboutMe = styled.div`
+    
     display: flex;
     flex-direction: column;
     gap: 38px;
@@ -26,6 +28,7 @@ const AboutMe = styled.div`
 `
 
 const AboutMeInfo = styled.p`
+    
     ${font({ weight: 400, Fmin: 16, Fmax: 18 })};
     line-height: 1.44444;
     color: ${theme.colors.menuFont}
